@@ -1,0 +1,30 @@
+
+body {
+    background-color: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Borel', cursive;
+    font-size: 8em;
+    color: rgb(193, 226, 190);
+}
+p{
+    text-align: center;
+}
+button{
+    display: block;
+    margin: auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+soft green
+https://www.color-hex.com/color-palette/93477
+soft brown
+https://www.color-hex.com/color-palette/93487
+
+    background-color: rgb(193, 226, 190);
+
+*/
