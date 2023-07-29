@@ -6,10 +6,18 @@ const Options = {
 }
 //created header for API key authorization
 
+//Main button to get quote
 let inspireButton = document.getElementById("getInspiredBtn")
 
-let fetchFunc = () => {
+//Boolean to check if home page is displayed
+let homePage = document.getElementById("mainHomeDiv")
+console.log(homePage.style.display)
 
+let fetchFunc = () => {
+//code for main page items to disappear
+homePage.style.display = "none"
+
+//code for retrieval and display of quote
     fetch('https://api.api-ninjas.com/v1/quotes?category=inspirational', Options).
         then((data) => {
             return data.json()
@@ -23,6 +31,8 @@ let fetchFunc = () => {
 
 
 
+//code for background shape to display + become larger
+
 
 }
 
@@ -30,10 +40,11 @@ let fetchFunc = () => {
 
 inspireButton.addEventListener('click', fetchFunc)
 
+
+
 //circular shape continues to grow => keyframes
 //2 colours. One inner and outer glow.
 //change from quote to breathing countdown
-//event listener type=animation for all text disappear 
 //2 buttons appear => back home or breathing loop with colour
 //option for colour to be randomly assigned (make object?)
 

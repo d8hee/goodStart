@@ -23,16 +23,17 @@ button{
 
 #quoteOfDay{
     text-align: center;
-
+    margin-top: 50px;
 }
 
 #EliassonTurrellGlow{
-    height: 20%;
+    margin: auto;
+    height: 60%;
     width: 20%;
-    border: 100px solid;
     border-radius: 50%;
     background-color: orange;
-   box-shadow: 30px 30px 40px 20px orange;
+    /*opacity: 0.5;*/
+    box-shadow: 30px 30px 40px 20px orange;
 }
 
 /*
