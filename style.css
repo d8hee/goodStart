@@ -21,20 +21,50 @@ button{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#quoteOfDay{
-    text-align: center;
-    margin-top: 50px;
+#eliassonTurrellGlow{
+    position: absolute;     /*relative to parent body*/
+    z-index: -1;
+    display: none;
+    border-radius: 50%;
+    background-color: #cae9be;
+    box-shadow: -5px -5px 40px 50px #cae9be;
+    margin: auto;
+    height: 150px;
+    width: 150px;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    animation-name: glowingCircle;
+    animation-duration: 10s;
 }
 
-#EliassonTurrellGlow{
-    margin: auto;
-    height: 60%;
-    width: 20%;
-    border-radius: 50%;
-    background-color: orange;
-    /*opacity: 0.5;*/
-    box-shadow: 30px 30px 40px 20px orange;
+#quoteOfDay{
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 2em;
+    padding-left: 15%;
+    padding-right: 15%;
+    transform: translate(0, 550%);
 }
+
+@keyframes glowingCircle {
+    from{
+        height: 150px; width:150px
+
+    }
+
+    to{
+        height: 1000px; width:1000px;
+        margin-top: -500px;
+        margin-left: -500px;
+
+    }
+}
+
 
 /*
 soft green

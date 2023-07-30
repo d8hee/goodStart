@@ -8,14 +8,12 @@ const Options = {
 
 //Main button to get quote
 let inspireButton = document.getElementById("getInspiredBtn")
-
-//Boolean to check if home page is displayed
+//Main homepage div 
 let homePage = document.getElementById("mainHomeDiv")
-console.log(homePage.style.display)
 
 let fetchFunc = () => {
 //code for main page items to disappear
-homePage.style.display = "none"
+    homePage.style.display = "none"
 
 //code for retrieval and display of quote
     fetch('https://api.api-ninjas.com/v1/quotes?category=inspirational', Options).
@@ -29,10 +27,8 @@ homePage.style.display = "none"
             //retrieving data in an array, first object w key "quote"
         })
 
-
-
-//code for background shape to display + become larger
-
+//code for background shape to appear + become larger
+eliassonTurrellGlow.style.display = "block"
 
 }
 
