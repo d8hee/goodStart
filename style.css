@@ -40,7 +40,6 @@ button{
 
 
 #eliassonTurrellGlow{
-  /*  position: absolute; */    /*relative to parent body*/
     z-index: -1;
     display: none;
     border-radius: 50%;
@@ -50,15 +49,11 @@ button{
         0px 0px 50px 200px white,
         inset -5px 0px 200px white;
     /* x offset, y offset, blur, spread, color */
+
+    position: absolute;
     top: 50%;
     left: 50%;
-   /** margin: auto;
-    height: 150px;
-    width: 150px;
-    top: 50%;
-    left: 50%;
-    margin-top: -75px;
-    margin-left: -75px;*/
+    transform: translate(-50%,-50%);
     animation-name: glowingCircle;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -71,24 +66,26 @@ button{
     font-style: italic;
     font-size: 2em;
     color: darkslategray;
-    padding: 25% 30%;
-    top: 25%;
+    position: absolute;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%,-50%);
+/*position calculate from top left corner. Use transform to move item w half its width&height */
 }
 
 @keyframes glowingCircle {
     from {
-        height: 800px; width:800px;
+        height: 600px; width:600px;
        /* margin-top: -400px;
         margin-left: -400px;*/
     }
     50%{
-        height: 1000px; width:1000px;
+        height: 800px; width:800px;
       /*  margin-top: -500px;
         margin-left: -500px;        */
     }
     to{
-        height: 800px; width:800px;
+        height: 600px; width:600px;
      /*  margin-top: -400px;
         margin-left: -480px;*/
     }

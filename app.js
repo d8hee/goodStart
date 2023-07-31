@@ -23,12 +23,13 @@ let fetchFunc = () => {
             console.log(err, "ERROR")
         }).then((json) => { //input from first data return
             console.log(json)
-            document.querySelector('#quoteOfDay').innerHTML = json[0].quote
             //retrieving data in an array, first object w key "quote"
+            document.querySelector('#quoteOfDay').innerHTML = json[0].quote
+            //code for background shape to appear + become larger
+            eliassonTurrellGlow.style.display = "block"
         })
 
-//code for background shape to appear + become larger
-eliassonTurrellGlow.style.display = "block"
+
 
 }
 
