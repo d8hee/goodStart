@@ -1,66 +1,96 @@
 
 body {
     background-color: rgb(251,250,245);
+    height: 100%;
 }
 
 h1{
     text-align: center;
     font-family: 'Borel', cursive;
-    font-size: 8em;
+    font-size: 10em;
     color: rgb(193, 226, 190);
+    padding-top: 10%;
+    margin-bottom: 0;
 }
 
 p{
     text-align: center;
+    font-family: 'Karla', Helvetica, sans-serif;
+    font-size: 2em;
+    color: rgb(120, 142, 118);
+    margin-bottom: 80px;
+
 }
 
 button{
     display: block;
     margin: auto;
+    border: none;
+    border-radius: 12px;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    font-family: 'Karla', Helvetica, sans-serif;
+    padding: 20px;
+    background-color: rgb(251,250,245);
+    color: rgb(120, 142, 118);
+    box-shadow: 5px 5px 10px 5px rgb(120, 142, 118);
+
 }
 
+
+
 #eliassonTurrellGlow{
-    position: absolute;     /*relative to parent body*/
+  /*  position: absolute; */    /*relative to parent body*/
     z-index: -1;
     display: none;
     border-radius: 50%;
     background-color: #cae9be;
-    box-shadow: -5px -5px 40px 50px #cae9be;
-    margin: auto;
+    box-shadow:
+        -5px -5px 300px 50px #cae9be,
+        0px 0px 50px 200px white,
+        inset -5px 0px 200px white;
+    /* x offset, y offset, blur, spread, color */
+    top: 50%;
+    left: 50%;
+   /** margin: auto;
     height: 150px;
     width: 150px;
     top: 50%;
     left: 50%;
     margin-top: -75px;
-    margin-left: -75px;
+    margin-left: -75px;*/
     animation-name: glowingCircle;
     animation-duration: 10s;
+    animation-iteration-count: infinite;
 }
 
 #quoteOfDay{
-    position: absolute;
     z-index: 3;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Karla', Helvetica, sans-serif;
     font-style: italic;
     font-size: 2em;
-    top: 50%;
-    width: 100%;
+    color: darkslategray;
+    padding: 25% 30%;
+    top: 25%;
+    left: 50%;
 }
 
 @keyframes glowingCircle {
-    from{
-        height: 150px; width:150px
-
+    from {
+        height: 800px; width:800px;
+       /* margin-top: -400px;
+        margin-left: -400px;*/
     }
-
-    to{
+    50%{
         height: 1000px; width:1000px;
-        margin-top: -500px;
-        margin-left: -500px;
-
+      /*  margin-top: -500px;
+        margin-left: -500px;        */
+    }
+    to{
+        height: 800px; width:800px;
+     /*  margin-top: -400px;
+        margin-left: -480px;*/
     }
 }
 
