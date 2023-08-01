@@ -24,7 +24,10 @@ let fetchFunc = () => {
         }).then((json) => { //input from first data return
             console.log(json)
             //retrieving data in an array, first object w key "quote"
-            document.querySelector('#quoteOfDay').innerHTML = json[0].quote
+           // document.querySelector('#quoteOfDay').innerHTML = json[0].quote
+           // document.querySelector('#quoteSource').innerHTML = json[0].author
+            let mainQuote = `${json[0].quote} <br> -${json[0].author}`
+            document.querySelector('#quoteOfDay').innerHTML = mainQuote
             //code for background shape to appear + become larger
             eliassonTurrellGlow.style.display = "block"
         })
@@ -37,10 +40,6 @@ let fetchFunc = () => {
 
 inspireButton.addEventListener('click', fetchFunc)
 
-
-
-//circular shape continues to grow => keyframes
-//2 colours. One inner and outer glow.
 //change from quote to breathing countdown
 //2 buttons appear => back home or breathing loop with colour
 //option for colour to be randomly assigned (make object?)

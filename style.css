@@ -9,7 +9,7 @@ h1{
     font-family: 'Borel', cursive;
     font-size: 10em;
     color: rgb(193, 226, 190);
-    padding-top: 10%;
+    padding-top: 5%;
     margin-bottom: 0;
 }
 
@@ -43,9 +43,9 @@ button{
     z-index: -1;
     display: none;
     border-radius: 50%;
-    background-color: #cae9be;
+    background-color: #bdddb0;
     box-shadow:
-        -5px -5px 300px 50px #cae9be,
+        -5px -5px 300px 50px #bdddb0,
         0px 0px 50px 200px white,
         inset -5px 0px 200px white;
     /* x offset, y offset, blur, spread, color */
@@ -91,7 +91,44 @@ button{
     }
 }
 
+@media (max-width: 479px ){
+    h1{
+        font-size: 5em;
+    }
+    p{
+        font-size: 1.5em;
+    }
+    #mainHomeDiv{
+        padding: 0 4%;
+    }
+    button{
+       font-size: 1em;
+       padding: 15px; 
+    }
+    #quoteOfDay{
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 700px ){
+    h1{
+        font-size: 8em;
+    }
+    p{
+        font-size: 1.8em;
+    }
+    #mainHomeDiv{
+        padding: 0 4%;
+    }
+    button{
+       font-size: 1em;
+       padding: 18px; 
+    }
+    #quoteOfDay{
+        font-size: 1.8em;
+    }    
+}
 
+/*max-width 533*/
 /*
 soft green
 https://www.color-hex.com/color-palette/93477
