@@ -98,6 +98,25 @@ p{
     }
 }
 
+@media (max-width: 320px){
+    h1{
+        font-size: 2em;
+    }    
+    p{
+        font-size: 1em;
+    }
+    #mainHomeDiv{
+        padding: 0 4%;
+    }
+    button{
+        font-size: 0.8em;
+        padding: 10px; 
+    }
+    #quoteOfDay{
+        font-size: 1em;
+    }
+}
+
 @media (max-width: 479px ){
     h1{
         font-size: 5em;
