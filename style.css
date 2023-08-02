@@ -19,10 +19,9 @@ p{
     font-size: 2em;
     color: rgb(120, 142, 118);
     margin-bottom: 80px;
-
 }
 
-button{
+#getInspiredBtn{
     display: block;
     margin: auto;
     border: none;
@@ -34,10 +33,7 @@ button{
     background-color: rgb(251,250,245);
     color: rgb(120, 142, 118);
     box-shadow: 5px 5px 10px 5px rgb(120, 142, 118);
-
 }
-
-
 
 #eliassonTurrellGlow{
     z-index: -1;
@@ -73,21 +69,32 @@ button{
 /*position calculate from top left corner. Use transform to move item w half its width&height */
 }
 
+#backHome{
+    display: none;
+    background-color: transparent;
+    border-radius: 12px;
+    padding: 10px;
+    font-size: 1em;
+    font-family: 'Karla', Helvetica, sans-serif;
+    color: rgb(120, 142, 118);
+    box-shadow: 2px 2px 5px 0px rgb(120, 142, 118);
+    border: none;
+
+    position: absolute;
+    top: 95%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
 @keyframes glowingCircle {
     from {
         height: 600px; width:600px;
-       /* margin-top: -400px;
-        margin-left: -400px;*/
     }
     50%{
         height: 800px; width:800px;
-      /*  margin-top: -500px;
-        margin-left: -500px;        */
     }
     to{
         height: 600px; width:600px;
-     /*  margin-top: -400px;
-        margin-left: -480px;*/
     }
 }
 
@@ -128,13 +135,8 @@ button{
     }    
 }
 
-/*max-width 533*/
+
 /*
 soft green
 https://www.color-hex.com/color-palette/93477
-soft brown
-https://www.color-hex.com/color-palette/93487
-
-    background-color: rgb(193, 226, 190);
-
 */
