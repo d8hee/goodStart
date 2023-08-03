@@ -7,4 +7,4 @@ I wanted to keep the site simple, with just 2 main pages. I used event handlers 
 Keyframes were used to create the looping CSS animation. The glowing/growing circle was inspired by artists such as James Turrell and Olafur Eliasson, who both work with colour and light.
 
 link to the site:
-https://subtle-crumble-22e647.netlify.app/
+https://good-start.netlify.app
